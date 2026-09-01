@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>K200 Options System Map - 2026-09-01 14:48</title>
+<style>
+  body{font-family:"Malgun Gothic","Apple SD Gothic Neo",Arial,sans-serif;margin:32px;background:#f6f7f9;color:#1f2937}
+  .wrap{max-width:1100px;margin:auto;background:#fff;padding:28px 32px;border-radius:14px;box-shadow:0 2px 12px rgba(0,0,0,.08)}
+  h1{font-size:26px;margin:0 0 8px}
+  h2{font-size:19px;margin:28px 0 10px}
+  .meta{color:#6b7280;margin-bottom:20px}
+  table{width:100%;border-collapse:collapse;margin:8px 0 20px}
+  th,td{border:1px solid #d1d5db;padding:10px 12px;text-align:left}
+  th{background:#f3f4f6}
+  td.num{text-align:right;font-variant-numeric:tabular-nums}
+  .key{font-weight:700}
+  .up{background:#ecfdf5}
+  .down{background:#fef2f2}
+  .pivot{background:#fffbeb}
+  .risk{background:#fff7ed}
+  .note{padding:14px 16px;background:#f3f4f6;border-radius:9px;line-height:1.6}
+  .summary{font-size:17px;font-weight:700;padding:16px;border-left:5px solid #6b7280;background:#fafafa}
+  small{color:#6b7280}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>K200 옵션 SYSTEM MAP</h1>
+  <div class="meta">2026-09-01 14:48 스냅샷 · K200 1077.08 · 실제 VKOSPI 44.09</div>
+
+  <h2>1. 핵심 가격 레벨</h2>
+  <table>
+    <thead><tr><th>구분</th><th>레벨/수치</th><th>현재 해석</th><th>중요도</th></tr></thead>
+    <tbody>
+      <tr class="pivot"><td class="key">현재 K200</td><td class="num key">1077.08</td><td>1080 바로 아래</td><td>⭐⭐⭐</td></tr>
+      <tr class="down"><td class="key">Weekly Call Wall</td><td class="num key">1080</td><td>단기 상방 관문 · OI 941 · 스냅샷 +20</td><td>🔴🔴🔴</td></tr>
+      <tr class="up"><td>실제 VKOSPI +0.5σ</td><td class="num">1092.04</td><td>1080 돌파 후 1차 변동성 목표</td><td>🟢</td></tr>
+      <tr class="down"><td class="key">Monthly Call Wall</td><td class="num key">1100</td><td>상방 핵심 저항</td><td>🔴🔴🔴</td></tr>
+      <tr class="risk"><td>실제 VKOSPI +1σ</td><td class="num">1106.99</td><td>상방 확장 구간</td><td>🚨</td></tr>
+      <tr class="pivot"><td class="key">1072.5 Call OI</td><td class="num key">3,981</td><td>위클리 절대 최대 Call OI · 핵심 중심축</td><td>⭐⭐⭐</td></tr>
+      <tr class="pivot"><td class="key">Weekly Max Pain</td><td class="num key">1065</td><td>단기 회귀·핀 후보</td><td>⭐⭐⭐</td></tr>
+      <tr class="pivot"><td>실제 VKOSPI -0.5σ</td><td class="num">1062.12</td><td>하방 변동성 경계</td><td>⭐⭐⭐</td></tr>
+      <tr class="down"><td class="key">Weekly Put Wall</td><td class="num key">1060</td><td>단기 하방 핵심 방어 후보 · OI 667</td><td>🔴🔴🔴</td></tr>
+      <tr><td class="key">Monthly Max Pain</td><td class="num key">1052.5</td><td>1060 붕괴 시 다음 목적지 후보</td><td>⭐⭐</td></tr>
+      <tr class="down"><td class="key">Monthly Put Wall</td><td class="num key">1050</td><td>중기 하방 방어 후보 · OI 1,525</td><td>🔴🔴🔴</td></tr>
+      <tr class="risk"><td>실제 VKOSPI -1σ</td><td class="num">1047.17</td><td>1050 이탈 시 하방 확장</td><td>🚨</td></tr>
+    </tbody>
+  </table>
+
+  <h2>2. 변동성 / Gamma</h2>
+  <table>
+    <thead><tr><th>항목</th><th>현재값</th><th>해석</th></tr></thead>
+    <tbody>
+      <tr><td class="key">실제 VKOSPI</td><td class="num key">44.09</td><td>HTS [0471] 확인값</td></tr>
+      <tr><td>실제 일간 1σ</td><td class="num">±29.91pt</td><td>1047.17 ~ 1106.99</td></tr>
+      <tr><td>ATM IV Proxy</td><td class="num">48.22</td><td>프로그램 자동 계산</td></tr>
+      <tr><td>Proxy 일간 1σ</td><td class="num">±32.72pt</td><td>실제 VKOSPI보다 넓게 추정</td></tr>
+      <tr><td>Proxy 오차</td><td class="num">+4.13%p</td><td>VKOSPI 대비 약 +9.4%</td></tr>
+      <tr><td>GEX Net/Gross</td><td class="num">+0.650</td><td>양(+) Gamma 방향으로 강하게 기울어짐</td></tr>
+      <tr class="pivot"><td class="key">Gamma Regime</td><td class="key">LONG-GAMMA-LIKE</td><td>평균회귀·핀 성격 우세 추정*</td></tr>
+    </tbody>
+  </table>
+
+  <h2>3. 실전 매매 지도</h2>
+  <table>
+    <thead><tr><th>조건</th><th>다음 레벨</th><th>판단</th></tr></thead>
+    <tbody>
+      <tr class="up"><td class="key">🟢 1080 돌파·안착</td><td>1092 → 1100 → 1107</td><td>상방 열림</td></tr>
+      <tr class="pivot"><td class="key">↔ 1072.5 ~ 1080</td><td>레인지</td><td>Long-gamma형 핀/등락 가능성</td></tr>
+      <tr class="down"><td class="key">🔴 1072.5 이탈 + 1070 이탈</td><td>1065</td><td>Weekly MP 회귀</td></tr>
+      <tr class="down"><td class="key">🔴 1065 이탈</td><td>1062 → 1060</td><td>핵심 하방 클러스터</td></tr>
+      <tr class="risk"><td class="key">🚨 1060 붕괴</td><td>1052.5 → 1050 → 1047</td><td>하방 확장 경계</td></tr>
+    </tbody>
+  </table>
+
+  <div class="summary">핵심: 1080 ↔ 1060이 현재 메인 전장. 1080 상향 돌파 시 1092~1100, 1060 하향 이탈 시 1052.5~1050 구간을 다음 핵심 영역으로 본다.</div>
+  <p class="note"><small>* Gamma Regime은 실제 딜러 보유 포지션을 확인한 값이 아니라 Call(+)/Put(-) 방식의 Local GEX 구조적 Proxy다. Max Pain 및 Weekly Absolute Put Wall은 위클리 하단 strike 코드 누락 가능성에 따른 편향 가능성이 있으므로 Local Wall과 현재가 관계를 우선한다.</small></p>
+</div>
+</body>
+</html>
