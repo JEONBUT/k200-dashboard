@@ -1,70 +1,61 @@
 <!doctype html>
-<html lang="ko">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>K200 Options Dashboard</title>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>K200 SYSTEM V8.3</title>
 <style>
-body{font-family:"Malgun Gothic","Apple SD Gothic Neo",Arial,sans-serif;margin:0;background:#f5f6f8;color:#1f2937}
-.wrap{max-width:1120px;margin:24px auto;padding:0 18px 36px}
-.card{background:#fff;border-radius:14px;padding:24px;margin-bottom:18px;box-shadow:0 2px 10px rgba(0,0,0,.07)}
-h1{margin:0 0 8px;font-size:27px} h2{font-size:19px;margin:0 0 12px} .meta{color:#6b7280}
-table{width:100%;border-collapse:collapse} th,td{border:1px solid #d1d5db;padding:10px 12px}
-th{background:#f3f4f6;text-align:left} .num{text-align:right;font-variant-numeric:tabular-nums}
-.pivot{background:#fffbeb} .up{background:#ecfdf5} .down{background:#fef2f2} .risk{background:#fff7ed}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
-.kpi{background:#f9fafb;border:1px solid #e5e7eb;border-radius:10px;padding:14px}
-.kpi b{display:block;font-size:20px;margin-top:5px} .big{font-size:18px;font-weight:700;line-height:1.8}
-small{color:#6b7280;line-height:1.5}
-@media(max-width:700px){th,td{padding:8px 7px;font-size:13px}.card{padding:16px}}
-</style>
-</head>
-<body><div class="wrap">
-<div class="card">
-<h1>K200 옵션 SYSTEM MAP</h1>
-<div class="meta">20260902_090702 · K200 1044.97 · 실제 VKOSPI 43.01</div>
-</div>
+body{font-family:"Malgun Gothic","Apple SD Gothic Neo",Arial,sans-serif;margin:0;background:#f3f4f6;color:#1f2937;line-height:1.65}
+.wrap{max-width:1160px;margin:22px auto;padding:0 16px 40px}
+.card{background:white;border-radius:14px;padding:22px;margin-bottom:16px;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+.hero{border-left:6px solid #111827} h1{margin:0 0 5px;font-size:27px} h2{font-size:20px;margin:0 0 12px} h3{font-size:17px;margin:18px 0 8px}
+.meta,small{color:#6b7280} .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}
+.kpi{background:#f9fafb;border:1px solid #e5e7eb;border-radius:10px;padding:13px} .kpi b{display:block;font-size:21px;margin-top:4px}
+table{width:100%;border-collapse:collapse} th,td{border:1px solid #d1d5db;padding:9px 10px} th{background:#f3f4f6;text-align:left}
+.num{text-align:right;font-variant-numeric:tabular-nums} .report{font-size:16px}
+.scenario{font-size:18px;font-weight:800;line-height:1.9;padding:13px 16px;border-radius:10px;margin:8px 0}
+.up{background:#ecfdf5} .down{background:#fef2f2} .pivot{background:#fffbeb}
+.verdict{background:#eef2ff;border-radius:12px;padding:16px;font-size:17px;font-weight:700}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:780px){.cols{grid-template-columns:1fr}th,td{font-size:13px;padding:7px 6px}.card{padding:16px}}
+</style></head><body><div class="wrap">
 
-<div class="card">
-<h2>핵심 지표</h2>
-<div class="grid">
-<div class="kpi">Weekly MP<b>1062.50</b></div>
-<div class="kpi">Weekly Put Wall<b>1040.00</b></div>
-<div class="kpi">Weekly Call Wall<b>1072.50</b></div>
-<div class="kpi">Gamma Regime<b>LONG-GAMMA-LIKE (PROXY)</b></div>
-</div>
-</div>
+<div class="card hero"><h1>K200 옵션 SYSTEM V8.3</h1>
+<div class="meta">20260902_092647 · K200 <b>1050.12</b> · 실제 VKOSPI <b>42.84</b></div></div>
 
-<div class="card">
-<h2>가격 레벨</h2>
-<table>
-<tr><th>구분</th><th>레벨</th><th>해석</th></tr>
-<tr class="pivot"><td><b>현재 K200</b></td><td class="num"><b>1044.97</b></td><td>수집 마지막 Spot</td></tr><tr class="down"><td><b>Weekly Call Wall</b></td><td class="num"><b>1072.50</b></td><td>단기 상방 핵심 관문</td></tr><tr class="up"><td><b>VKOSPI +0.5σ</b></td><td class="num"><b>1059.13</b></td><td>상방 0.5σ 변동성 경계</td></tr><tr class="down"><td><b>Monthly Call Wall</b></td><td class="num"><b>1050.00</b></td><td>월물 상방 OI 관문</td></tr><tr class="risk"><td><b>VKOSPI +1σ</b></td><td class="num"><b>1073.28</b></td><td>상방 1σ 확장 경계</td></tr><tr class="pivot"><td><b>Weekly Max Pain</b></td><td class="num"><b>1062.50</b></td><td>위클리 회귀·핀 후보</td></tr><tr class="pivot"><td><b>VKOSPI -0.5σ</b></td><td class="num"><b>1030.81</b></td><td>하방 0.5σ 변동성 경계</td></tr><tr class="down"><td><b>Weekly Put Wall</b></td><td class="num"><b>1040.00</b></td><td>단기 하방 핵심 방어 후보</td></tr><tr class=""><td><b>Monthly Max Pain</b></td><td class="num"><b>1052.50</b></td><td>다음 회귀 후보</td></tr><tr class="down"><td><b>Monthly Put Wall</b></td><td class="num"><b>1015.00</b></td><td>월물 하방 OI 관문</td></tr><tr class="risk"><td><b>VKOSPI -1σ</b></td><td class="num"><b>1016.66</b></td><td>하방 1σ 확장 경계</td></tr>
+<div class="card"><h2>현재 시스템</h2><div class="grid">
+<div class="kpi">Weekly MP<b>1060.00</b></div><div class="kpi">Weekly Put Wall<b>1050.00</b></div>
+<div class="kpi">Weekly Call Wall<b>1072.50</b></div><div class="kpi">Monthly MP<b>1052.50</b></div>
+<div class="kpi">Monthly Put Wall<b>1050.00</b></div><div class="kpi">Monthly Call Wall<b>1065.00</b></div>
+<div class="kpi">VKOSPI 1σ<b>±28.34</b></div><div class="kpi">Gamma Proxy<b>LONG-GAMMA-LIKE (PROXY)</b></div>
+</div></div>
+
+<div class="card"><h2>지금 제일 중요한 변화</h2><div class="report"><ul><li>K200은 직전 조회 1044.97 → 1050.12로 +5.15pt 움직였다.</li><li>Weekly Max Pain이 1062.50 → 1060.00으로 2.5pt 하향 이동했다.</li><li>Weekly Put Wall이 1040.00 → 1050.00으로 10.0pt 상향 이동했다.</li><li>Weekly Call Wall은 1072.50으로 직전과 동일하다.</li><li>Monthly Max Pain은 1052.50으로 직전과 동일하다.</li><li>Monthly Put Wall이 1015.00 → 1050.00으로 35.0pt 상향 이동했다.</li><li>Monthly Call Wall이 1050.00 → 1065.00으로 15.0pt 상향 이동했다.</li></ul></div>
+<table><tr><th>항목</th><th>직전 조회</th><th>현재</th><th>변화</th></tr><tr><td>K200</td><td class='num'>1044.97</td><td class='num'><b>1050.12</b></td><td class='num'>+5.15</td></tr><tr><td>Weekly MP</td><td class='num'>1062.50</td><td class='num'><b>1060.00</b></td><td class='num'>-2.50</td></tr><tr><td>Weekly Put Wall</td><td class='num'>1040.00</td><td class='num'><b>1050.00</b></td><td class='num'>+10.00</td></tr><tr><td>Weekly Call Wall</td><td class='num'>1072.50</td><td class='num'><b>1072.50</b></td><td class='num'>+0.00</td></tr><tr><td>Monthly MP</td><td class='num'>1052.50</td><td class='num'><b>1052.50</b></td><td class='num'>+0.00</td></tr><tr><td>Monthly Put Wall</td><td class='num'>1015.00</td><td class='num'><b>1050.00</b></td><td class='num'>+35.00</td></tr><tr><td>Monthly Call Wall</td><td class='num'>1050.00</td><td class='num'><b>1065.00</b></td><td class='num'>+15.00</td></tr>
+<tr><td>VKOSPI</td><td class="num">-</td><td class="num"><b>42.84</b></td><td class="num">-</td></tr>
+</table></div>
+
+<div class="card"><h2>OI 변화 해석</h2><p class="report">위클리 OI 증가는 1100C +190 / 1150C +159 / 1040C +156 / 1090C +137 / 1080C +97 / 1050C +95 / 1000P +95 순으로 잡혔고, 감소는 1060P -5 / 1055C -4 / 1142.5C -4 / 1002.5P -4 / 1072.5C -3 / 1072.5P -2 / 1132.5C -2 순이다. OI 증가만으로 콜/풋의 매수·매도 방향은 확정할 수 없으므로, 해당 행사가에 포지션이 새로 구축되거나 축소되는 구조 변화로만 해석한다.</p>
+<div class="cols"><div><h3>Weekly OI 증가</h3><table><tr><th>CP</th><th>Strike</th><th>OI</th><th>ΔOI</th></tr><tr><td>CALL</td><td class='num'>1100</td><td class='num'>1033</td><td class='num'><b>+190</b></td></tr><tr><td>CALL</td><td class='num'>1150</td><td class='num'>821</td><td class='num'><b>+159</b></td></tr><tr><td>CALL</td><td class='num'>1040</td><td class='num'>222</td><td class='num'><b>+156</b></td></tr><tr><td>CALL</td><td class='num'>1090</td><td class='num'>489</td><td class='num'><b>+137</b></td></tr><tr><td>CALL</td><td class='num'>1080</td><td class='num'>1161</td><td class='num'><b>+97</b></td></tr><tr><td>CALL</td><td class='num'>1050</td><td class='num'>300</td><td class='num'><b>+95</b></td></tr><tr><td>PUT</td><td class='num'>1000</td><td class='num'>1234</td><td class='num'><b>+95</b></td></tr><tr><td>CALL</td><td class='num'>1095</td><td class='num'>121</td><td class='num'><b>+85</b></td></tr></table></div>
+<div><h3>Weekly OI 감소</h3><table><tr><th>CP</th><th>Strike</th><th>OI</th><th>ΔOI</th></tr><tr><td>PUT</td><td class='num'>1060</td><td class='num'>660</td><td class='num'><b>-5</b></td></tr><tr><td>CALL</td><td class='num'>1055</td><td class='num'>55</td><td class='num'><b>-4</b></td></tr><tr><td>CALL</td><td class='num'>1142.5</td><td class='num'>119</td><td class='num'><b>-4</b></td></tr><tr><td>PUT</td><td class='num'>1002.5</td><td class='num'>234</td><td class='num'><b>-4</b></td></tr><tr><td>CALL</td><td class='num'>1072.5</td><td class='num'>3995</td><td class='num'><b>-3</b></td></tr><tr><td>PUT</td><td class='num'>1072.5</td><td class='num'>54</td><td class='num'><b>-2</b></td></tr><tr><td>CALL</td><td class='num'>1132.5</td><td class='num'>102</td><td class='num'><b>-2</b></td></tr><tr><td>CALL</td><td class='num'>1147.5</td><td class='num'>109</td><td class='num'><b>-2</b></td></tr></table></div></div></div>
+
+<div class="card"><h2>현재 구조 해석</h2><p class="report">현재 Spot 1050.12은 Weekly MP 1060.00 아래에 있다. Monthly MP 1052.50는 현재가 위에 있다. 실제 VKOSPI 42.84 기준 일간 1σ는 약 ±28.34pt이고, -0.5σ 1035.95, +0.5σ 1064.29이다. 현재가 바로 아래의 첫 시스템 후보선은 1050.00이다. 현재가 바로 위의 첫 시스템 후보선은 1052.50이다.</p>
+<p>실제 VKOSPI 기준: <b>-0.5σ 1035.95</b> / <b>+0.5σ 1064.29</b> ·
+<b>-1σ 1021.78</b> / <b>+1σ 1078.46</b></p></div>
+
+<div class="card"><h2>실전 SYSTEM MAP</h2>
+<div class="scenario down">🔴 하방 구조: 1050 → 1035.95 → 1021.78 → 1000</div>
+<div class="scenario up">🟢 상방 구조: 1052.5 → 1060 → 1064.29 → 1065 → 1072.5</div>
+<div class="scenario pivot">⭐ 1차 분기 후보: 1050.00</div></div>
+
+<div class="card"><h2>최종 시스템 해석</h2><div class="verdict">직전 대비 주요 Wall이 전반적으로 상향 이동해 시스템 중심축이 위로 이동하고 있다. 현재는 1050.00 부근이 가장 가까운 1차 분기점이다. 1060.00 Weekly MP를 회복하기 전까지 반등은 위클리 중심값 아래의 되돌림으로 본다.</div></div>
+
+<div class="card"><h2>변동성 / Gamma 참고</h2><table>
+<tr><th>항목</th><th>값</th><th>설명</th></tr>
+<tr><td>실제 VKOSPI</td><td class="num">42.84</td><td>HTS [0471] 입력값</td></tr>
+<tr><td>실제 일간 1σ</td><td class="num">±28.34</td><td>1021.78 ~ 1078.46</td></tr>
+<tr><td>ATM IV Proxy</td><td class="num">54.12</td><td>옵션 체인 계산 proxy</td></tr>
+<tr><td>Proxy - VKOSPI</td><td class="num">11.28%p</td><td>26.3%</td></tr>
+<tr><td>GEX Net/Gross</td><td class="num">0.528</td><td>Call(+)/Put(-) 구조적 proxy</td></tr>
 </table>
+<p><small>주의: OI만으로 실제 매수/매도 주체 또는 dealer gamma sign을 확정할 수 없다. Weekly 하단 코드 rollover가 완전히 해결되지 않아 먼 하단 strike가 누락되면 Weekly Max Pain/Absolute Put Wall이 편향될 수 있다. Local Wall·직전 대비 OI 변화·Spot·실제 VKOSPI σ의 중첩을 우선한다.</small></p>
 </div>
 
-<div class="card">
-<h2>변동성 / Gamma</h2>
-<table>
-<tr><th>항목</th><th>현재값</th><th>해석</th></tr>
-<tr><td>실제 VKOSPI</td><td class="num">43.01</td><td>HTS [0471] 입력값</td></tr>
-<tr><td>실제 일간 1σ</td><td class="num">±28.31</td><td>1016.66 ~ 1073.28</td></tr>
-<tr><td>ATM IV Proxy</td><td class="num">55.96</td><td>프로그램 옵션 체인 계산</td></tr>
-<tr><td>Proxy 일간 1σ</td><td class="num">±36.84</td><td>1008.13 ~ 1081.81</td></tr>
-<tr><td>Proxy - VKOSPI</td><td class="num">12.95%p</td><td>30.1%</td></tr>
-<tr><td>GEX Net/Gross</td><td class="num">0.405</td><td>구조적 proxy</td></tr>
-<tr class="pivot"><td><b>Gamma Regime</b></td><td colspan="2"><b>LONG-GAMMA-LIKE (PROXY)</b></td></tr>
-</table>
-</div>
-
-<div class="card">
-<h2>실전 지도</h2>
-<div class="big">🟢 상방 구조: 1072.5 → 1059.1 → 1050.0 → 1073.3</div>
-<div class="big">🔴 하방 구조: 1062.5 → 1030.8 → 1040.0 → 1052.5 → 1015.0 → 1016.7</div>
-<p><small>
-Gamma Regime은 실제 딜러 inventory 확정값이 아니라 Call(+)/Put(-) Local GEX 구조적 proxy다.
-Weekly 하단 strike 코드 누락 가능성 때문에 Weekly Max Pain/Absolute Put Wall은 편향될 수 있다.
-실전에서는 Local Wall·현재가·OI 변화·실제 VKOSPI σ의 중첩을 우선한다.
-</small></p>
-</div>
 </div></body></html>
