@@ -13,30 +13,30 @@ table{width:100%;border-collapse:collapse;display:table}th,td{padding:8px;border
 @media(max-width:800px){.cols{grid-template-columns:1fr}.w{padding:12px}.c{padding:15px}th,td{font-size:12px;padding:6px}.story{font-size:15px}}
 </style></head><body><div class=w>
 <h1>K200 SYSTEM V8.5 · Narrative</h1>
-<div class=m>20260903_091653 · K200_SYSTEM_V85_20260903091653_summary.txt · Story-driven Intraday Dashboard</div>
+<div class=m>20260903_093356 · K200_SYSTEM_V85_20260903093356_summary.txt · Story-driven Intraday Dashboard</div>
 
 <div class=c><h2>현재 시스템</h2><div class=g>
-<div class=k>Spot<div class=b>1038.26</div></div>
-<div class=k>Weekly MP<div class=b>1050.0</div><span class=m>D-0 · EXPIRY / VERY HIGH</span></div>
-<div class=k>W Put / Call<div class=b>1010.0 / 1060.0</div></div>
+<div class=k>Spot<div class=b>1040.12</div></div>
+<div class=k>Weekly MP<div class=b>1047.5</div><span class=m>D-0 · EXPIRY / VERY HIGH</span></div>
+<div class=k>W Put / Call<div class=b>1040.0 / 1070.0</div></div>
 <div class=k>Monthly MP<div class=b>1050.0</div><span class=m>D-7 · WATCH</span></div>
-<div class=k>M Put / Call<div class=b>1010.0 / 1050.0</div></div>
-<div class=k>ATM IV Proxy<div class=b>52.57</div></div>
-<div class=k>VKOSPI<div class=b>42.86</div><span class=m>actual σ 28.03pt</span></div>
-<div class=k>Gamma Proxy<div class=b>-0.039</div><span class=m>NEUTRAL / MIXED
-Local net GEX proxy: -8.524307181550771
-Local gross GEX proxy: 218.19969886393514
-Net/Gross ratio: -0.03906653962371577
+<div class=k>M Put / Call<div class=b>1015.0 / 1050.0</div></div>
+<div class=k>ATM IV Proxy<div class=b>50.76</div></div>
+<div class=k>VKOSPI<div class=b>42.81</div><span class=m>actual σ 28.05pt</span></div>
+<div class=k>Gamma Proxy<div class=b>0.131</div><span class=m>LONG-GAMMA-LIKE (PROXY)
+Local net GEX proxy: 35.15127421436026
+Local gross GEX proxy: 267.5445801143568
+Net/Gross ratio: 0.13138473670195644
 Confidence: LOW (proxy only)
 WARNING: Dealer long/short gamma cannot be proven from OI alone.
 This regime is a Call(+)/Put(-) local GEX structural proxy, not dealer inventory.
 
 ================ SYSTEM MAP ================
-WEEKLY_MP=1050.0
-WEEKLY_LOCAL_PUT=1010.0
-WEEKLY_LOCAL_CALL=1060.0
+WEEKLY_MP=1047.5
+WEEKLY_LOCAL_PUT=1040.0
+WEEKLY_LOCAL_CALL=1070.0
 MONTHLY_MP=1050.0
-MONTHLY_LOCAL_PUT=1010.0
+MONTHLY_LOCAL_PUT=1015.0
 MONTHLY_LOCAL_CALL=1050.0
 
 ================ CHATGPT INPUT ================
@@ -76,32 +76,32 @@ IMPORTANT
 14) ChatGPT에서 실제 VKOSPI sigma와 ATM_IV_PROXY sigma를 비교 검증한다.</span></div>
 </div></div>
 
-<div class="c important"><h2>🔥 이번 조회에서 중요한 것</h2><ul class=highlight><li>🔥 09:16 구조 전환 — Weekly Put Wall 1030.0 → 1010.0 / Weekly Call Wall 1072.5 → 1060.0 / Monthly Put Wall 1015.0 → 1010.0</li><li>🔥 Weekly Put Wall 1030.0 → 1010.0 · 20.0pt 하향</li><li>🔥 Weekly Call Wall 1072.5 → 1060.0 · 12.5pt 하향</li><li>🔥 Monthly Put Wall 1015.0 → 1010.0 · 5.0pt 하향</li><li>⭐ Spot 1044.48 → 1038.26 (-6.22pt)</li><li>🔥 1050.0 · 3중 Confluence (W MP, M MP, M Call)</li><li>🔥 1010.0 · 2중 Confluence (W Put, M Put)</li></ul></div>
+<div class="c important"><h2>🔥 이번 조회에서 중요한 것</h2><ul class=highlight><li>🔥 09:33 구조 전환 — Weekly MP 1050.0 → 1047.5 / Weekly Put Wall 1010.0 → 1040.0 / Weekly Call Wall 1060.0 → 1070.0 / Monthly Put Wall 1010.0 → 1015.0</li><li>🔥 Weekly MP 1050.0 → 1047.5 · 2.5pt 하향</li><li>🔥 Weekly Put Wall 1010.0 → 1040.0 · 30.0pt 상향</li><li>🔥 Weekly Call Wall 1060.0 → 1070.0 · 10.0pt 상향</li><li>🔥 Monthly Put Wall 1010.0 → 1015.0 · 5.0pt 상향</li><li>⭐ Spot 1038.26 → 1040.12 (+1.86pt)</li><li>🔥 1050.0 · 2중 Confluence (M MP, M Call)</li></ul></div>
 
-<div class=c><h2>오늘 시장의 스토리</h2><div class=story><p>전일 마지막 저장 Spot은 <b>1031.53</b>였고, 오늘 첫 유효 스냅샷은 <b>1044.48</b>로 시작했다. 저장 기준 변화는 <b>+12.95pt</b>다. 장 초반부터 가격이 전일 옵션 구조의 어느 구간으로 재진입했는지가 오늘 첫 번째 관찰 포인트였다.</p><p>오늘 저장 구간에서 Spot은 <b>1044.48 → 1038.26</b> (<b>-6.22pt</b>) 움직였다. 현재 Weekly MP는 <b>1050.0</b>, Monthly MP는 <b>1050.0</b>로 Spot 대비 위에 놓여 있다.</p><p><span class='fire'>🔥 <b>09:16이 오늘 가장 큰 구조 변화 시점</b></span>으로 잡힌다. Weekly Put Wall <b>1030.0 → 1010.0</b>, Weekly Call Wall <b>1072.5 → 1060.0</b>, Monthly Put Wall <b>1015.0 → 1010.0</b>가 동시에 또는 연속적으로 바뀌었다. 이 시점은 단순 Spot 움직임보다 옵션시장의 중심축과 전투선이 재배치된 구간으로 해석한다.</p><p>현재 Spot <b>1038.26</b>은 실전 박스 후보 <b>1010.0 ↔ 1050.0</b> 안에서 하단으로부터 약 <b>71%</b> 지점에 있다. 따라서 지금은 박스 내부 추격보다 <b>1050.0 회복·안착</b> 또는 <b>1010.0 이탈</b>이 실제 방향 확정에 더 중요하다.</p><p>Weekly에서는 1060.0C <b>+523</b>, 1070.0C <b>+416</b>, 1105.0C <b>+333</b>, 1050.0C <b>+300</b>, 1020.0P <b>+295</b>, 1102.5C <b>+228</b>가 이번 조회에서 크게 변했다.</p><p>Monthly에서는 1150.0C <b>+202</b>, 950.0P <b>+164</b>, 1137.5C <b>+53</b>, 1050.0C <b>+33</b>, 1100.0C <b>+29</b>, 1130.0C <b>+22</b>가 이번 조회에서 크게 변했다.</p><p>OI 증가는 해당 행사가에서 포지션 규모가 커졌다는 뜻일 뿐 <b>매수/매도 방향을 확정하지 않는다.</b> 따라서 OI는 Wall 이동, Spot 위치, IV/VKOSPI와 함께 읽는다.</p><p>변동성에서는 ATM-IV Proxy가 <b>52.57</b>, 실제 VKOSPI가 <b>42.86</b>로 괴리는 <b>+9.71 vol pt</b>다. 실제 VKOSPI 기준 일간 1σ는 약 <b>±28.03pt</b>다. 옵션 개별 IV proxy와 공식 변동성지수의 괴리가 큰 경우 만기일·ATM 구성·개별 옵션 왜곡 가능성을 함께 고려한다.</p></div></div>
+<div class=c><h2>오늘 시장의 스토리</h2><div class=story><p>전일 마지막 저장 Spot은 <b>1031.53</b>였고, 오늘 첫 유효 스냅샷은 <b>1044.48</b>로 시작했다. 저장 기준 변화는 <b>+12.95pt</b>다. 장 초반부터 가격이 전일 옵션 구조의 어느 구간으로 재진입했는지가 오늘 첫 번째 관찰 포인트였다.</p><p>오늘 저장 구간에서 Spot은 <b>1044.48 → 1040.12</b> (<b>-4.36pt</b>) 움직였다. 현재 Weekly MP는 <b>1047.5</b>, Monthly MP는 <b>1050.0</b>로 Spot 대비 위에 놓여 있다.</p><p><span class='fire'>🔥 <b>09:33이 오늘 가장 큰 구조 변화 시점</b></span>으로 잡힌다. Weekly MP <b>1050.0 → 1047.5</b>, Weekly Put Wall <b>1010.0 → 1040.0</b>, Weekly Call Wall <b>1060.0 → 1070.0</b>, Monthly Put Wall <b>1010.0 → 1015.0</b>가 동시에 또는 연속적으로 바뀌었다. 이 시점은 단순 Spot 움직임보다 옵션시장의 중심축과 전투선이 재배치된 구간으로 해석한다.</p><p>현재 Spot <b>1040.12</b>은 실전 박스 후보 <b>1040.0 ↔ 1047.5</b> 안에서 하단으로부터 약 <b>2%</b> 지점에 있다. 따라서 지금은 박스 내부 추격보다 <b>1047.5 회복·안착</b> 또는 <b>1040.0 이탈</b>이 실제 방향 확정에 더 중요하다.</p><p>Weekly에서는 1060.0C <b>+619</b>, 1070.0C <b>+509</b>, 1050.0C <b>+426</b>, 1040.0C <b>+356</b>, 1080.0C <b>+330</b>, 1092.5C <b>+298</b>가 이번 조회에서 크게 변했다.</p><p>Monthly에서는 1070.0C <b>+298</b>, 1150.0C <b>+237</b>, 1032.5P <b>+205</b>, 1032.5C <b>+197</b>, 1135.0C <b>+50</b>, 1075.0C <b>+38</b>가 이번 조회에서 크게 변했다.</p><p>OI 증가는 해당 행사가에서 포지션 규모가 커졌다는 뜻일 뿐 <b>매수/매도 방향을 확정하지 않는다.</b> 따라서 OI는 Wall 이동, Spot 위치, IV/VKOSPI와 함께 읽는다.</p><p>변동성에서는 ATM-IV Proxy가 <b>50.76</b>, 실제 VKOSPI가 <b>42.81</b>로 괴리는 <b>+7.95 vol pt</b>다. 실제 VKOSPI 기준 일간 1σ는 약 <b>±28.05pt</b>다. 옵션 개별 IV proxy와 공식 변동성지수의 괴리가 큰 경우 만기일·ATM 구성·개별 옵션 왜곡 가능성을 함께 고려한다.</p></div></div>
 
-<div class=c><h2>Confluence</h2><ul class=highlight><li>🔥 <b>1050.0</b> — 3중 Confluence: W MP, M MP, M Call</li><li>🔥 <b>1010.0</b> — 2중 Confluence: W Put, M Put</li></ul></div>
+<div class=c><h2>Confluence</h2><ul class=highlight><li>🔥 <b>1050.0</b> — 2중 Confluence: M MP, M Call</li></ul></div>
 
 <div class=c><h2>실전 SYSTEM MAP</h2><div class=map>
-<div class=up>🟢 상방: <b>1050.0 → 1052.3 → 1060.0 → 1066.3</b></div>
-<div class=star>⭐ 현재 Spot: <b>1038.26</b> · 중심축 후보 <b>1050.0</b></div>
-<div class=down>🔴 하방: <b>1024.2 → 1010.2 → 1010.0 → 1000.0</b></div>
+<div class=up>🟢 상방: <b>1047.5 → 1054.1 → 1068.2 → 1070.0</b></div>
+<div class=star>⭐ 현재 Spot: <b>1040.12</b> · 중심축 후보 <b>1047.5</b></div>
+<div class=down>🔴 하방: <b>1040.0 → 1026.1 → 1015.0 → 1012.1 → 1000.0</b></div>
 <div class=tail>🚨 Tail 후보: <b>1000.0</b></div>
 </div></div>
 
-<div class=c><h2>현재 시스템 판단</h2><div class=verdict>현재는 <b>1050.0</b> 중심축 아래다. 그 레벨을 회복·안착하기 전까지는 상방 전환 확정보다 되돌림/박스 내부 움직임으로 본다. 반대로 <b>1010.0</b> 이탈 시 하단 구조가 다시 열린다.</div></div>
+<div class=c><h2>현재 시스템 판단</h2><div class=verdict>현재는 <b>1047.5</b> 중심축 아래다. 그 레벨을 회복·안착하기 전까지는 상방 전환 확정보다 되돌림/박스 내부 움직임으로 본다. 반대로 <b>1040.0</b> 이탈 시 하단 구조가 다시 열린다.</div></div>
 
 <div class=c><h2>오늘 장중 타임라인</h2><table><tr>
-<th>시각</th><th>Spot</th><th>W MP</th><th>W Put</th><th>W Call</th><th>M MP</th><th>M Put</th><th>M Call</th><th>ATM IV</th><th>VKOSPI</th><th>GEX</th></tr><tr><td>09:04</td><td>1044.48</td><td>1050.0</td><td>1030.0</td><td>1072.5</td><td>1050.0</td><td>1015.0</td><td>1050.0</td><td>63.53</td><td>-</td><td>0.159</td></tr><tr><td>09:16</td><td>1038.26</td><td>1050.0</td><td>1010.0</td><td>1060.0</td><td>1050.0</td><td>1010.0</td><td>1050.0</td><td>52.57</td><td>42.86</td><td>-0.039</td></tr></table></div>
+<th>시각</th><th>Spot</th><th>W MP</th><th>W Put</th><th>W Call</th><th>M MP</th><th>M Put</th><th>M Call</th><th>ATM IV</th><th>VKOSPI</th><th>GEX</th></tr><tr><td>09:04</td><td>1044.48</td><td>1050.0</td><td>1030.0</td><td>1072.5</td><td>1050.0</td><td>1015.0</td><td>1050.0</td><td>63.53</td><td>-</td><td>0.159</td></tr><tr><td>09:16</td><td>1038.26</td><td>1050.0</td><td>1010.0</td><td>1060.0</td><td>1050.0</td><td>1010.0</td><td>1050.0</td><td>52.57</td><td>42.86</td><td>-0.039</td></tr><tr><td>09:33</td><td>1040.12</td><td>1047.5</td><td>1040.0</td><td>1070.0</td><td>1050.0</td><td>1015.0</td><td>1050.0</td><td>50.76</td><td>42.81</td><td>0.131</td></tr></table></div>
 
 <div class=c><h2>주요 Strike OI 궤적</h2><p class=m>V8.5 JSON 스냅샷부터 누적. 동일 행사가의 OI가 장중 어떻게 이동했는지 추적한다.</p>
-<table><tr><th>Strike</th><th>Weekly OI 흐름</th><th>Monthly OI 흐름</th></tr><tr><td colspan=3>V8.5 스냅샷이 더 쌓이면 표시됩니다.</td></tr></table></div>
+<table><tr><th>Strike</th><th>Weekly OI 흐름</th><th>Monthly OI 흐름</th></tr><tr><td>1000.0C</td><td>4 → 5</td><td>3431 → 3431</td></tr><tr><td>1000.0P</td><td>1524 → 1515</td><td>4366 → 4355</td></tr><tr><td>1010.0C</td><td>1 → 1</td><td>60 → 61</td></tr><tr><td>1010.0P</td><td>1151 → 1406</td><td>668 → 669</td></tr><tr><td>1015.0C</td><td>4 → 4</td><td>32 → 32</td></tr><tr><td>1015.0P</td><td>324 → 437</td><td>591 → 591</td></tr><tr><td>1030.0C</td><td>333 → 316</td><td>299 → 298</td></tr><tr><td>1030.0P</td><td>751 → 687</td><td>220 → 233</td></tr><tr><td>1035.0C</td><td>49 → 56</td><td>70 → 70</td></tr><tr><td>1035.0P</td><td>406 → 407</td><td>105 → 105</td></tr><tr><td>1040.0C</td><td>711 → 1067</td><td>212 → 207</td></tr><tr><td>1040.0P</td><td>687 → 874</td><td>259 → 262</td></tr><tr><td>1045.0C</td><td>102 → 187</td><td>434 → 434</td></tr><tr><td>1045.0P</td><td>75 → 90</td><td>190 → 192</td></tr><tr><td>1047.5C</td><td>76 → 162</td><td>27 → 27</td></tr><tr><td>1047.5P</td><td>16 → 15</td><td>55 → 55</td></tr><tr><td>1050.0C</td><td>1032 → 1458</td><td>1558 → 1580</td></tr><tr><td>1050.0P</td><td>508 → 506</td><td>1539 → 1538</td></tr><tr><td>1070.0C</td><td>2506 → 3015</td><td>457 → 755</td></tr><tr><td>1070.0P</td><td>376 → 376</td><td>239 → 239</td></tr><tr><td>1072.5C</td><td>4181 → 4203</td><td>189 → 189</td></tr><tr><td>1072.5P</td><td>50 → 50</td><td>54 → 54</td></tr></table></div>
 
 <div class=c><h2>이번 조회 OI 변화</h2><div class=cols>
-<div><h3>Weekly 증가</h3><table><tr><th>CP</th><th>Strike</th><th>OI</th><th>ΔOI</th></tr><tr><td>CALL</td><td>1060.0</td><td>1313</td><td class=pos>+523</td></tr><tr><td>CALL</td><td>1070.0</td><td>2506</td><td class=pos>+416</td></tr><tr><td>CALL</td><td>1105.0</td><td>766</td><td class=pos>+333</td></tr><tr><td>CALL</td><td>1050.0</td><td>1032</td><td class=pos>+300</td></tr><tr><td>PUT</td><td>1020.0</td><td>915</td><td class=pos>+295</td></tr><tr><td>CALL</td><td>1102.5</td><td>380</td><td class=pos>+228</td></tr><tr><td>CALL</td><td>1080.0</td><td>1964</td><td class=pos>+224</td></tr><tr><td>PUT</td><td>1017.5</td><td>349</td><td class=pos>+219</td></tr></table></div>
-<div><h3>Weekly 감소</h3><table><tr><th>CP</th><th>Strike</th><th>OI</th><th>ΔOI</th></tr><tr><td>CALL</td><td>1030.0</td><td>333</td><td class=neg>-27</td></tr><tr><td>CALL</td><td>1087.5</td><td>233</td><td class=neg>-24</td></tr><tr><td>PUT</td><td>1060.0</td><td>629</td><td class=neg>-7</td></tr><tr><td>CALL</td><td>1110.0</td><td>742</td><td class=neg>-4</td></tr><tr><td>PUT</td><td>1067.5</td><td>71</td><td class=neg>-2</td></tr><tr><td>PUT</td><td>1080.0</td><td>85</td><td class=neg>-2</td></tr><tr><td>CALL</td><td>1037.5</td><td>31</td><td class=neg>-1</td></tr></table></div>
-<div><h3>Monthly 증가</h3><table><tr><th>CP</th><th>Strike</th><th>OI</th><th>ΔOI</th></tr><tr><td>CALL</td><td>1150.0</td><td>2991</td><td class=pos>+202</td></tr><tr><td>PUT</td><td>950.0</td><td>2860</td><td class=pos>+164</td></tr><tr><td>CALL</td><td>1137.5</td><td>159</td><td class=pos>+53</td></tr><tr><td>CALL</td><td>1050.0</td><td>1558</td><td class=pos>+33</td></tr><tr><td>CALL</td><td>1100.0</td><td>3487</td><td class=pos>+29</td></tr><tr><td>CALL</td><td>1130.0</td><td>528</td><td class=pos>+22</td></tr><tr><td>CALL</td><td>1120.0</td><td>330</td><td class=pos>+17</td></tr><tr><td>CALL</td><td>1145.0</td><td>505</td><td class=pos>+15</td></tr></table></div>
-<div><h3>Monthly 감소</h3><table><tr><th>CP</th><th>Strike</th><th>OI</th><th>ΔOI</th></tr><tr><td>PUT</td><td>1000.0</td><td>4366</td><td class=neg>-122</td></tr><tr><td>PUT</td><td>980.0</td><td>573</td><td class=neg>-11</td></tr><tr><td>PUT</td><td>1037.5</td><td>49</td><td class=neg>-11</td></tr><tr><td>CALL</td><td>1092.5</td><td>103</td><td class=neg>-10</td></tr><tr><td>CALL</td><td>1105.0</td><td>139</td><td class=neg>-8</td></tr><tr><td>CALL</td><td>1040.0</td><td>212</td><td class=neg>-6</td></tr><tr><td>CALL</td><td>1065.0</td><td>621</td><td class=neg>-4</td></tr><tr><td>CALL</td><td>1070.0</td><td>457</td><td class=neg>-4</td></tr></table></div>
+<div><h3>Weekly 증가</h3><table><tr><th>CP</th><th>Strike</th><th>OI</th><th>ΔOI</th></tr><tr><td>CALL</td><td>1060.0</td><td>1932</td><td class=pos>+619</td></tr><tr><td>CALL</td><td>1070.0</td><td>3015</td><td class=pos>+509</td></tr><tr><td>CALL</td><td>1050.0</td><td>1458</td><td class=pos>+426</td></tr><tr><td>CALL</td><td>1040.0</td><td>1067</td><td class=pos>+356</td></tr><tr><td>CALL</td><td>1080.0</td><td>2294</td><td class=pos>+330</td></tr><tr><td>CALL</td><td>1092.5</td><td>524</td><td class=pos>+298</td></tr><tr><td>CALL</td><td>1090.0</td><td>2003</td><td class=pos>+259</td></tr><tr><td>PUT</td><td>1010.0</td><td>1406</td><td class=pos>+255</td></tr></table></div>
+<div><h3>Weekly 감소</h3><table><tr><th>CP</th><th>Strike</th><th>OI</th><th>ΔOI</th></tr><tr><td>PUT</td><td>1020.0</td><td>757</td><td class=neg>-158</td></tr><tr><td>PUT</td><td>1002.5</td><td>283</td><td class=neg>-81</td></tr><tr><td>PUT</td><td>1030.0</td><td>687</td><td class=neg>-64</td></tr><tr><td>CALL</td><td>1030.0</td><td>316</td><td class=neg>-17</td></tr><tr><td>PUT</td><td>1060.0</td><td>618</td><td class=neg>-11</td></tr><tr><td>CALL</td><td>1105.0</td><td>755</td><td class=neg>-11</td></tr><tr><td>PUT</td><td>1000.0</td><td>1515</td><td class=neg>-9</td></tr><tr><td>CALL</td><td>1067.5</td><td>447</td><td class=neg>-9</td></tr></table></div>
+<div><h3>Monthly 증가</h3><table><tr><th>CP</th><th>Strike</th><th>OI</th><th>ΔOI</th></tr><tr><td>CALL</td><td>1070.0</td><td>755</td><td class=pos>+298</td></tr><tr><td>CALL</td><td>1150.0</td><td>3228</td><td class=pos>+237</td></tr><tr><td>PUT</td><td>1032.5</td><td>237</td><td class=pos>+205</td></tr><tr><td>CALL</td><td>1032.5</td><td>220</td><td class=pos>+197</td></tr><tr><td>CALL</td><td>1135.0</td><td>237</td><td class=pos>+50</td></tr><tr><td>CALL</td><td>1075.0</td><td>713</td><td class=pos>+38</td></tr><tr><td>CALL</td><td>1067.5</td><td>64</td><td class=pos>+25</td></tr><tr><td>CALL</td><td>1050.0</td><td>1580</td><td class=pos>+22</td></tr></table></div>
+<div><h3>Monthly 감소</h3><table><tr><th>CP</th><th>Strike</th><th>OI</th><th>ΔOI</th></tr><tr><td>PUT</td><td>950.0</td><td>2736</td><td class=neg>-124</td></tr><tr><td>CALL</td><td>1115.0</td><td>663</td><td class=neg>-70</td></tr><tr><td>CALL</td><td>1100.0</td><td>3434</td><td class=neg>-53</td></tr><tr><td>PUT</td><td>1042.5</td><td>105</td><td class=neg>-17</td></tr><tr><td>PUT</td><td>1000.0</td><td>4355</td><td class=neg>-11</td></tr><tr><td>PUT</td><td>1112.5</td><td>59</td><td class=neg>-11</td></tr><tr><td>CALL</td><td>1095.0</td><td>389</td><td class=neg>-8</td></tr><tr><td>CALL</td><td>1082.5</td><td>54</td><td class=neg>-7</td></tr></table></div>
 </div></div>
 
 <div class=c><h2>해석 원칙</h2><p>
